@@ -1,10 +1,68 @@
- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <title>Document</title>
+<title>Purple🤩🤩</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+</head> 
+</body>
+<div class="container">
+  <h1>LOGIN</h1>
+  <form id="loginForm" style="display:block;">
+    <input type="text" placeholder="Username" required><br>
+    <input type="password" placeholder="Password" required><br>
+    <button type="submit">Login</button>
+  </form>
+  <h2>
+  <form id="registerForm" style="display:none;">
+    <input type="text" placeholder="First Name" required><br>
+    <input type="tel" placeholder="Phone" required><br>
+    <input type="email" placeholder="Email" required><br>
+    <input type="text" placeholder="Username" required><br>
+    <input type="password" placeholder="Password" required><br>
+    <button type="submit">SIGN UP</button>
+    </h2>
+  </form>
+</div>
+
+<div id="website" style="display:none;">
+  <h1> Purple Website!</h1>
+  <header>
+        <h1>Welcome to Purple Smart platform</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a> | 
+        <a href="#">About</a> | 
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to our website. We offer various services...</p>
+    </section>
+    <section>
+        <h2>Contact Us</h2>
+        <p>You can reach us at ifeanyimichael801@gmail.com or call us at +2348107710024</p>
+    </section>
+    <footer>
+        <p>&copy; 2021 My Website. All rights reserved.</p>
+    </footer>
+  <p>This website is purple in color and you can view it without logging in.</p>
+</div>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('loginForm').style.display = 'none';
+    document.getElementById('registerForm').style.display = 'block';
+  });
+
+  document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('registerForm').style.display = 'none';
+    document.getElementById('website').style.display = 'block';
+  });
+</script>
   
 </body>
-</html>>
+</html>
